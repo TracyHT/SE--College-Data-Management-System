@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 export default function LayoutEmpty ({ children  }){
-    return (<div className="md:container mx-auto">
+    return (<div className="w-3/5 mx-auto ">
         {children}
     </div>)
 }

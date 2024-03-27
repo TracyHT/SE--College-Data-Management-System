@@ -14,6 +14,12 @@ export default {
         'sans': ['Montserrat', 'sans-serif'],
       }
     },
+    backgroundSize:{
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      "100% 100%": '100% 100%'
+    }
   },
   plugins: [],
 }
