@@ -8,7 +8,7 @@ export default function LayoutLogged ({ children ,menuData, label }){
             <Topbar label={label}></Topbar>
             <Sidebar menuData={menuData}></Sidebar>
             <div className={""}>
-                <div className={"inline-flex flex-col items-start mt-[150px] ml-[330px] w-full"}>
+                <div className={"inline-flex flex-col items-start mt-[150px] ml-[400px] w-full"}>
                     {children}
                 </div>
             </div>

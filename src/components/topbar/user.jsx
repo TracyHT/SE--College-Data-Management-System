@@ -1,5 +1,6 @@
 import { PropTypes } from 'prop-types';
 import dropDownIcon from "../../assets/dropdown-icon.png"
+
 export default function User ({className,img,name,id}){
     return (
         <div className={` ${className}`}>

@@ -1,8 +1,8 @@
 import { PropTypes } from 'prop-types';
 import MenuItem from './menuItem';
 
-import logoRectangle from "../../assets/icon_rectangle.png"
-import sideBarBg from "../../assets/sidebar_bg.png"
+
+import images from '../../assets';
 
 export default function Sidebar ({className, menuData , ...prop }){
     const renderItems = () => {
@@ -37,11 +37,11 @@ export default function Sidebar ({className, menuData , ...prop }){
     };
     return(
         <div className={`fixed inline-flex flex-col items-start flex-shrink-0 height-[1329px] gap-[24px] z-1  ${className} `} {...prop} >
-            <img className="relative"src={sideBarBg}></img>
+            <img className="relative"src={images.sideBarBgImage}></img>
             <div className="mt-[16px] absolute px-[24px] ">
 
                 <div className="flex items-center self-stretch py-[20px] gap-[9px]">
-                    <img src ={logoRectangle} className="w-8 h-8"></img>
+                    <img src ={images.rectangleImage} className="w-8 h-8"></img>
                     <span className="text-xl not-italic font-bold leading-7 text-[#F8F9FA]">PlatformName</span>
                 </div>
 

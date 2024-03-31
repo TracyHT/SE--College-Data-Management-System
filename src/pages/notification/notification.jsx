@@ -1,15 +1,15 @@
 
-// import LayoutEmpty from './../../layouts/layout-empty';
+import circle from "../../assets/circle.png"
 import LayoutLogged from '../../layouts/layout-logged';
 
-import Bell from "../../assets/Bell.png"
+import images from "../../assets"
 import markAll from "../../assets/check2-all.png"
 
 export default function Notification() {
     const MENU_ITEM = [
         {
             // index: 0,
-            icon: Bell,
+            icon: images.bookImage,
             titles: "Overview",
             numberNoti: 2,
             activePage: false,
@@ -31,7 +31,7 @@ export default function Notification() {
         },
         {
             // index: 1,
-            icon: Bell,
+            icon: images.bellImage,
             titles: "Notification",
             numberNoti: 2,
             activePage: true,
@@ -53,7 +53,7 @@ export default function Notification() {
         },
         {
             // index: 2,
-            icon: Bell,
+            icon: images.graduateImage,
             titles: "Gradebook",
             numberNoti: 2,
             activePage: false,
@@ -75,7 +75,7 @@ export default function Notification() {
         },
         {
             // index: 3,
-            icon:Bell,
+            icon: images.calendarImage,
             titles: "Timetable",
             numberNoti: 2,
             activePage: false,
@@ -97,7 +97,7 @@ export default function Notification() {
         },
         {
             // index: 4,
-            icon: Bell,
+            icon: images.settingImage,
             titles: "Settings",
             numberNoti: 2,
             activePage: false,
@@ -118,14 +118,16 @@ export default function Notification() {
         
         },
     ];
+    
     return <LayoutLogged menuData={MENU_ITEM} label={"Notification"} >
             <div className="w-full">
 
                 <div className="flex justify-between items-center self-stretch ">
                     <span className="flex text-3xl not-italic font-bold leading-10 text-[#080D25]">Courses Annoucement</span>
-                    <div className="flex items-center gap-[8px] mr-[400px]">
+                    <div className="flex items-center gap-[8px] mr-[450px]">
                         <img src={markAll} alt="mark"></img>
-                        <spam className="text-sm not-italic font-semibold leading-5 text-[#6C757D] ">Mark all as read</spam>
+                        <span className="text-sm not-italic font-semibold leading-5 text-[#6C757D] ">Mark all as read</span>
+
                     </div>
                 </div>
                 <div className="flex items-start gap-[20px]">
@@ -192,7 +194,7 @@ export default function Notification() {
                     <div className="flex p-8 flex-col items-end self-stretch w-[750px] h-[1000px] bg-white rounded-[20px] mt-[32px]">
                         <div className="flex flex-col items-start self-stretch px-[12px] py-[24px] gap-[14px]   border-solid border-b-2 border-[#000] "  >
                             <div className="flex items-center self-stretch gap-[8px]">
-                                <img className="w-[15px] h-[15px]"></img>
+                                <img className="w-[15px] h-[15px]" src={circle}></img>
                                 <span className="text-xl not-italic font-semibold leading-7 text-[#3D8BFD]">Cancel CA class on Tuesday, 19 March 2024</span>
                             </div>
                             <p className="text-base not-italic font-medium leading-6 text-[#343A40]">
@@ -207,7 +209,7 @@ Cuong
                             </p>
                             <div className="flex justify-between items-start self-stretch">
                                 <span className="text-sm not-italic font-semibold leading-5 text-[#AFB5BB]">3 days ago </span>
-                                <span className="text-right text-sm not-italic font-semibold leading-5 text-sm not-italic font-medium leading-5 text-[#080D25]">Posted by:  Quoc Cuong Pham</span>
+                                <span className="text-right text-sm not-italic font-semibold leading-5 text-sm not-italic font-medium leading-5 text-[#080D25]">Posted by: Quoc Cuong Pham</span>
                             </div>
                         </div>
                     </div>
