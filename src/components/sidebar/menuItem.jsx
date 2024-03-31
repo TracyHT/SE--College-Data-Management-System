@@ -6,7 +6,7 @@ export default function MenuItem({data}){
     return (
         <button className={`flex justify-between items-center self-stretch px-[20px] py-[10px] w-full  ${!data.activePage || "rounded-[40px] bg-[#CFE2FF]"}` } >   
             <div className="flex items-center" >
-                <img  className="flex w-8 h-8 justify-center items-center px-[1px] py-[4px] mr-[5px]" src={data.icon} alt="icon"></img>
+                <img  className="flex w-9 h-8 justify-center items-center px-[1px] py-[4px] mr-[5px]" src={data.icon} alt="icon"></img>
                 <span className={`text-base not-italic font-semibold ${data.activePage? "leading-6 text-[#080D25]" : " text-[#F8F9FA]"}` }>
                 {data.titles}
                 </span>
