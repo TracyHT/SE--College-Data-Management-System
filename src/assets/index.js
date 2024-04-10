@@ -8,6 +8,9 @@ import bellImage from "./noti.svg";
 import rectangleImage from "./Rectangle 4965.svg";
 import sideBarBgImage from "./sidebar_bg.png";
 import bookImage from "./book-alt.svg"
+import sun from "./sun.png"
+import moon from "./moon.png"
+import down from "./down.png"
 const images = {
     bookImage,
     avatar,
@@ -19,5 +22,8 @@ const images = {
     bellImage,
     rectangleImage,
     sideBarBgImage,
+    sun,
+    moon,
+    down
 }
 export default images;

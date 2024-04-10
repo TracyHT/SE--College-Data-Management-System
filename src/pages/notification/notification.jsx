@@ -3,6 +3,7 @@ import images from "../../assets"
 import CourseAnnoucement from './courseAnnoucement';
 import NoticeBoard from './noticeBoard';
 import { useState } from 'react';
+import Settings from '../settings/settings';
 const MENU_ITEM = [
     {
         // index: 0,
@@ -100,21 +101,21 @@ const MENU_ITEM = [
         // index: 4,
         icon: images.settingImage,
         titles: "Settings",
-        numberNoti: 2,
+        numberNoti: 0,
         activePage: false,
         children: {
-            data:[
-                {
-                    id:1,
-                    titles: "Notice Board",
-                    numberNoti: 1
-                },
-                {
-                    id:2,
-                    titles: "Course Annoucement",
-                    numberNoti: 1
-                }
-            ]
+            data:[{
+                id:1,
+                titles: "Notice Board",
+                numberNoti: 1,
+                activePage: true,
+            },
+            {
+                id:2,
+                titles: "Course Annoucement",
+                numberNoti: 1,
+                activePage: false,
+            }]
         }
     
     },
@@ -130,14 +131,17 @@ export default function Notification() {
                 const activeChildItem = item.children.data.find(child => child.activePage);
                 return activeChildItem;
             }
-
         }); 
+
+
         if (activeChild) {
             const activeChildItem = activeChild.children.data.find(child => child.activePage);
             if (activeChildItem.titles === "Notice Board") {
                 return <NoticeBoard />;
             } else if (activeChildItem.titles === "Course Annoucement") {
                 return <CourseAnnoucement />;
+            } else if (activeChildItem.titles === "Settings") {
+                return <Settings />;
             }
         }
         

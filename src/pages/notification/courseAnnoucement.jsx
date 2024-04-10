@@ -15,8 +15,9 @@ export default function CourseAnnoucement()  {
 </div>
 <div className="flex items-start gap-[20px]">
     <div className="flex flex-col items-start gap-[20px] py-[32px]">
-        <div className="flex h-64 flex-col justify-center items-start w-[348px] py-[32px] px-[24px] bg-[#022081] rounded-[20px] gap-[24px]" >
-                                                                                                                                
+        
+
+        <div className="flex h-64 flex-col justify-center items-start w-[348px] py-[32px] px-[24px] bg-[#022081] rounded-[20px] gap-[24px]" >                                                                                                           
             <div className="flex flex-col justify-center items-start self-stretch">
                 <span className="text-sm not-italic font-medium leading-5 text-[#F8F9FA]">COURSE INFORMATION</span>
                 <span className="self-stretch text-xl not-italic font-bold leading-7 text-[#FFF]">Computer Architecture _S2_2023-24_G01</span>
@@ -31,9 +32,9 @@ export default function CourseAnnoucement()  {
                     <span className="text-sm not-italic font-normal leading-5 text-[#F8F9FA]">cuongpham@hcmut.edu.vn</span>
                 </div>
             </div>
-
-
         </div>
+
+        
         <div className="flex flex-col items-start bg-white rounded-[20px] px-[24px] py-[32px]  w-[348px] gap-[24px]">
                 <span className="text-xl not-italic font-bold leading-7 text-[#052C65]">Courses with updates</span>
                 <div className="flex flex-col items-start self-stretch gap-[8px]">
@@ -43,7 +44,7 @@ export default function CourseAnnoucement()  {
                         <span className="flex h-5 w-5 p-2 flex-col justify-center items-center gap-[10px] rounded-[100px] bg-[#DC3545] mr-[10px]">
                             <span className="text-xs not-italic font-bold leading-6 text-[#FFF]">
                                 1
-                        </span>
+                            </span>
                         </span>
                         
                     </div>
@@ -71,8 +72,9 @@ export default function CourseAnnoucement()  {
 
                     </div>
                 </div>
-
             </div>
+
+
     </div>
     <div className="flex p-8 flex-col items-end self-stretch w-[750px] h-[1000px] bg-white rounded-[20px] mt-[32px]">
         <div className="flex flex-col items-start self-stretch px-[12px] py-[24px] gap-[14px]   border-solid border-b-2 border-[#000] "  >
