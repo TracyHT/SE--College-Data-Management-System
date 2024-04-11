@@ -8,6 +8,10 @@ import bellImage from "./noti.svg";
 import rectangleImage from "./Rectangle 4965.svg";
 import sideBarBgImage from "./sidebar_bg.png";
 import bookImage from "./book-alt.svg"
+import navRightImage from "./nav-right.svg"
+import userCourseAnnouceImage from "./userCourseAnnouceDetail.svg"
+import navLeftImage from "./navLeft.svg"
+
 const images = {
     bookImage,
     avatar,
@@ -19,5 +23,8 @@ const images = {
     bellImage,
     rectangleImage,
     sideBarBgImage,
+    navRightImage,
+    userCourseAnnouceImage,
+    navLeftImage,
 }
 export default images;

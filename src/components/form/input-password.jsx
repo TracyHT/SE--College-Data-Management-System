@@ -20,7 +20,7 @@ export default function InputPassword ({className, label , id, ...prop }){
     </>
 } 
 
-InputPassword.PropTypes = {
+InputPassword.propTypes = {
     className : PropTypes.string,
     id : PropTypes.string,
     label : PropTypes.string,

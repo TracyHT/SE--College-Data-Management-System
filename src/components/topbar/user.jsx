@@ -4,7 +4,7 @@ import dropDownIcon from "../../assets/dropdown-icon.png"
 export default function User ({className,img,name,id}){
     return (
         <div className={` ${className}`}>
-            <div className="flex items-center gap-[24px]">
+            <div className="flex items-center gap-[1.75em]">
                 <img src={img} className="w-12 h-12 rounded-lg" ></img>
                 <div className="flex flex-col justify-center items-start">
                     <strong className="text-right text-base not-italic font-semibold leading-6 color-primary">{name}</strong>

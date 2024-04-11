@@ -1,5 +1,8 @@
 import markAll from "../../assets/check2-all.png"
-import images from "../../assets"
+// import images from "../../assets"
+import CourseItem from "./courseItem"
+import Letter from "./letter"
+
 
 export default function CourseAnnoucement()  {
     return(
@@ -7,15 +10,19 @@ export default function CourseAnnoucement()  {
 
 <div className="flex justify-between items-center self-stretch ">
     <span className="flex text-3xl not-italic font-bold leading-10 text-[#080D25]">Courses Annoucement</span>
-    <div className="flex items-center gap-[8px] mr-[450px]">
-        <img src={markAll} alt="mark"></img>
-        <span className="text-sm not-italic font-semibold leading-5 text-[#6C757D] ">Mark all as read</span>
-
+    <div className="flex items-center gap-[2em] mr-[6em]">
+        <div>
+            <span className="text-sm not-italic font-bold leading-5 text-[#DC3545]">1 unread notifications</span>
+        </div>
+        <div className="flex items-center gap-[1em] cursor-pointer">
+            <img src={markAll} alt="mark"></img>
+            <span className="text-sm not-italic font-semibold leading-5 text-[#6C757D] ">Mark all as read</span>
+        </div>
     </div>
 </div>
-<div className="flex items-start gap-[20px]">
-    <div className="flex flex-col items-start gap-[20px] py-[32px]">
-        <div className="flex h-64 flex-col justify-center items-start w-[348px] py-[32px] px-[24px] bg-[#022081] rounded-[20px] gap-[24px]" >
+<div className="flex items-start gap-[3em]">
+    <div className="flex flex-col items-start gap-[3em] py-[2em]">
+        <div className="flex h-64 flex-col justify-center items-start w-[24em] py-[2em] px-[2em] bg-[#022081] rounded-[2em] gap-[2em]" >
                                                                                                                                 
             <div className="flex flex-col justify-center items-start self-stretch">
                 <span className="text-sm not-italic font-medium leading-5 text-[#F8F9FA]">COURSE INFORMATION</span>
@@ -34,68 +41,47 @@ export default function CourseAnnoucement()  {
 
 
         </div>
-        <div className="flex flex-col items-start bg-white rounded-[20px] px-[24px] py-[32px]  w-[348px] gap-[24px]">
+        <div className="flex flex-col items-start bg-white rounded-[2em] px-[1.75em] py-[2em]  w-[24em] gap-[2em]">
                 <span className="text-xl not-italic font-bold leading-7 text-[#052C65]">Courses with updates</span>
-                <div className="flex flex-col items-start self-stretch gap-[8px]">
-                    <div className="flex justify-between items-center self-stretch px-[24px] py-[16px] rounded-[12px] bg-[#CFE2FF]">
-                        <span className="text-xl not-italic font-bold leading-7 text-[#3D8BFD] pr-[20px] w-3/4  break-words"> Computer Architecture_S2_2023-24_G01</span>
-                        
-                        <span className="flex h-5 w-5 p-2 flex-col justify-center items-center gap-[10px] rounded-[100px] bg-[#DC3545] mr-[10px]">
-                            <span className="text-xs not-italic font-bold leading-6 text-[#FFF]">
-                                1
-                        </span>
-                        </span>
-                        
-                    </div>
-                    <div className="flex justify-between items-center self-stretch px-[24px] py-[16px] ">
-                        <span className="text-xl not-italic font-bold leading-7 text-[#3D8BFD] pr-[20px]"> Software Engineering_S2_2023-24_G01</span>
-                        
-                        <span className="flex h-5 w-5 p-2 flex-col justify-center items-center gap-[10px] rounded-[100px] bg-[#DC3545]">
-                            <span className="text-xs not-italic font-bold leading-6 text-[#FFF]">
-                                1
-                        </span>
-                        </span>
-                        
-                    </div>
-                    <div className="flex justify-between items-center self-stretch px-[24px] py-[16px] ">
-                        <span className="text-xl not-italic font-normal leading-7 text-[#000] pr-[20px]"> Computer Architecture_S2_2023-24_G01</span>
-                                                            
-                    </div>
-                    <div className="flex justify-between items-center self-stretch px-[24px] py-[16px] ">
-                        <span className="text-xl not-italic font-normal leading-7 text-[#000] pr-[20px]"> Computer Architecture_S2_2023-24_G01</span>
-
-                        
-                    </div>
-                    <div className="flex justify-between items-center self-stretch px-[24px] py-[16px] ">
-                        <span className="text-xl not-italic font-normal leading-7 text-[#000] pr-[20px]"> Computer Architecture_S2_2023-24_G01</span>
-
-                    </div>
+                <div className="flex flex-col items-start self-stretch gap-[1em]">  
+                  <CourseItem title={"Computer Architecture_S2_2023-24_G01"} numberOfNoti={1} active={true} ></CourseItem>
+                  <CourseItem title="Software Engineering_S2_2023-24_G01" numberOfNoti={1} active={false} ></CourseItem>  
+                  <CourseItem title="Computer Architecture_S2_2023-24_G01" numberOfNoti={0} active={false} ></CourseItem>  
+                  <CourseItem title="Computer Architecture_S2_2023-24_G01" numberOfNoti={0} active={false} ></CourseItem>   
+                  <CourseItem title="Computer Architecture_S2_2023-24_G01" numberOfNoti={0} active={false} ></CourseItem>   
                 </div>
 
             </div>
     </div>
-    <div className="flex p-8 flex-col items-end self-stretch w-[750px] h-[1000px] bg-white rounded-[20px] mt-[32px]">
-        <div className="flex flex-col items-start self-stretch px-[12px] py-[24px] gap-[14px]   border-solid border-b-2 border-[#000] "  >
-            <div className="flex items-center self-stretch gap-[8px]">
-                <img className="w-[15px] h-[15px]" src={images.circleImage}></img>
-                <span className="text-xl not-italic font-semibold leading-7 text-[#3D8BFD]">Cancel CA class on Tuesday, 19 March 2024</span>
-            </div>
-            <p className="text-base not-italic font-medium leading-6 text-[#343A40]">
-            Dear all,<br></br><br></br>
+    <div className="flex p-8 flex-col items-end self-stretch w-[50em] bg-white rounded-[20px] mt-[2em] gap-[2em]">
+    
+        <Letter 
+        title={"Cancel CA class on Tuesday, 19 March 2024"} 
+        content={`Dear all,
 
-Due to an urgent meeting scheduled at the same time with our class, the class on Tuesday, 19-March will be cancelled.<br></br><br></br>
+Due to an urgent meeting scheduled at the same time with our class, the class on Tuesday, 19-March will be cancelled.
+Sorry for inconvenience.
 
-Sorry for inconvenience.<br></br><br></br>
+Best regards,
+Cuong`}
+        daySend = {"Sunday, March 17, 2024"}
+        nameSender = {"Quoc Cuong Pham"}
+        readed={true}
+        ></Letter>
 
-Best regards,<br></br><br></br>
-Cuong
-            </p>
-            <div className="flex justify-between items-start self-stretch">
-                <span className="text-sm not-italic font-semibold leading-5 text-[#AFB5BB]">3 days ago </span>
-                <span className="text-right text-sm not-italic font-semibold leading-5 text-sm not-italic font-medium leading-5 text-[#080D25]">Posted by: Quoc Cuong Pham</span>
-            </div>
-        </div>
+<Letter 
+        title={"Online class"} 
+        content={`Dear all,
+
+According to the regulation from IU, our first class in this semester will be organized online. Please join the following link for the class:
+
+Meeting ID: 413 285 071 138
+Passcode: NFPhRF`}
+        daySend = {"Monday, February 19, 2024"}
+        nameSender = {"Quoc Cuong Pham"}
+        ></Letter>
     </div>
+    
 </div>
 
 </div>

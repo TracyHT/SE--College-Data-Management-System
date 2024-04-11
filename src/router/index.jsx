@@ -6,7 +6,8 @@ const router =createBrowserRouter(
     createRoutesFromElements(
       <Route>
           <Route path="/login" element={<Login />}  />
-          <Route path="/noti" element={<Notification />}  />
+          <Route path="/noti/*" element={<Notification />}  />
+          
       </Route>
     )
   )

@@ -6,9 +6,9 @@ import images from '../../assets';
 
 export default function Topbar ({className, label , ...prop }){
     return(
-        <div className={`bg-white fixed pl-[350px] flex justify-between items-center flex-shrink-0 w-full
-        px-[32px] py-[40px] overflow-hidden ${className}`} {...prop} >
-            <header className='flex items-center flex-shrink-0 width-[524.5px] gap-[16px]'>
+        <div className={`bg-white fixed pl-[25em] flex justify-between items-center flex-shrink-0 w-full
+        px-[1.25em] py-[2.25em] overflow-hidden ${className}`} {...prop} >
+            <header className='flex items-center flex-shrink-0 gap-[1.25em]'>
             <img className="w-10 h-10 flex-shrink-0 color-primary" src={images.bellImage}  alt=""></img>
             <span className="text-right font-bold text-primary text-3xl ">{label}</span>
              </header>
