@@ -12,7 +12,7 @@ export default function NoticeBoardDetail() {
         <div className="w-full inline-flex flex-col items-start gap-[2em]">
 
         <div className="flex flex-col justify-center items-start">
-            <div className="flex flex-col justify-center items-start p-[1em] gap-[2em]">
+            <div className="flex flex-col justify-center items-start p-[0.5em] gap-[1em]">
                 <div className="flex items-center gap-[1em] cursor-pointer" onClick={handleOnClickBackNoticeBoard}>
                     <img src={images.navLeftImage} className={"w-8 h-8"}></img>
                     <div className="text-xl not-italic font-semibold leading-7 text-[#0A150F]">Back</div>

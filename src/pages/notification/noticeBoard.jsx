@@ -8,7 +8,7 @@ export default function NoticeBoard(){
     <div className="flex justify-between items-center self-stretch ">
         <span className="flex text-3xl not-italic font-bold leading-10 text-[#080D25]">Notice board</span>
 
-        <div className="flex items-center gap-[2em] mr-[6em]">
+        <div className="flex items-center gap-[2em]">
             <div>
                 <span className="text-sm not-italic font-bold leading-5 text-[#DC3545]">2 unread notifications</span>
             </div>

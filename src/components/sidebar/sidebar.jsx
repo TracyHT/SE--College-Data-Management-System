@@ -36,11 +36,10 @@ export default function Sidebar({ className, menuData, updateMenuData, ...prop }
         const clickedMenuItem = updatedData[parentIndex];
         if (typeof childIndex != 'undefined') {
             // Clicked on a parent item
-            console.log(clickedMenuItem)   
+
             if (clickedMenuItem.children.data[childIndex].titles == 'Notice Board') {
                 navigate('/noti/notice-board');
             } else if (clickedMenuItem.children.data[childIndex].titles == 'Course Announcement') {
-                console.log(clickedMenuItem.children.data[childIndex].titles)
                 navigate('/noti/course-announcement');
             }
         }
@@ -73,7 +72,7 @@ export default function Sidebar({ className, menuData, updateMenuData, ...prop }
     };
 
     return (
-        <div className={`fixed inline-flex flex-col items-start flex-shrink-0 z-1  ${className} `} {...prop}>
+        <div className={`fixed inline-flex flex-col items-start flex-shrink-0 z-1 h-full ${className} `} {...prop}>
             <img className="relative h-full w-[18rem]" src={images.sideBarBgImage} alt="Sidebar background" />
             <div className="mt-[2rem] absolute px-[1.75rem] ">
                 <div className="flex items-center self-stretch py-[1.75rem] gap-[0.75rem]">
