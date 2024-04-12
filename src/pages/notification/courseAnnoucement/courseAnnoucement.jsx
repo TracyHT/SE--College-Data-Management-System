@@ -1,7 +1,9 @@
-import markAll from "../../assets/check2-all.png"
+
+import images from "../../../assets"
+
 // import images from "../../assets"
 import CourseItem from "./courseItem"
-import Letter from "./letter"
+import Letter from "../noticeBoard/letter"
 
 
 export default function CourseAnnoucement()  {
@@ -15,7 +17,7 @@ export default function CourseAnnoucement()  {
             <span className="text-sm not-italic font-bold leading-5 text-[#DC3545]">1 unread notifications</span>
         </div>
         <div className="flex items-center gap-[1em] cursor-pointer">
-            <img src={markAll} alt="mark"></img>
+            <img src={images.check2allImage} alt="mark"></img>
             <span className="text-sm not-italic font-semibold leading-5 text-[#6C757D] ">Mark all as read</span>
         </div>
     </div>

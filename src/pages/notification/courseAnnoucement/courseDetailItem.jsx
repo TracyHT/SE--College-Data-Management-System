@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import images from '../../assets';
+import images from '../../../assets';
 
 export default function CourseDetailItem({ title, content, daySend, nameSender }) {
     return (

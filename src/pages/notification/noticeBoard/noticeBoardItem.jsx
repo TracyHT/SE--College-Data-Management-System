@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import images from '../../assets';
+import images from '../../../assets';
 import { useNavigate } from "react-router-dom";
 export default function NoticeBoardItem({ title, dayPost, readed=false }) {
     const navigate = useNavigate();

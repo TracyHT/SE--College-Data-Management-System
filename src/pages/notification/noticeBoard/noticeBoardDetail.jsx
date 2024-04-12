@@ -1,4 +1,4 @@
-import images from '../../assets';
+import images from '../../../assets';
 // import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
 

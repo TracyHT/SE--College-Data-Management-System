@@ -1,5 +1,6 @@
-import markAll from "../../assets/check2-all.png"
+
 import NoticeBoardItem from "./noticeBoardItem"
+import images from "../../../assets"
 
 export default function NoticeBoard(){
     return (
@@ -13,7 +14,7 @@ export default function NoticeBoard(){
                 <span className="text-sm not-italic font-bold leading-5 text-[#DC3545]">2 unread notifications</span>
             </div>
             <div className="flex items-center gap-[1em] cursor-pointer">
-                <img src={markAll} alt="mark"></img>
+                <img src={images.check2allImage} alt="mark"></img>
                 <span className="text-sm not-italic font-semibold leading-5 text-[#6C757D] ">Mark all as read</span>
             </div>
         </div>
