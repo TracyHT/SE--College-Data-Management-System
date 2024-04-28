@@ -4,7 +4,6 @@ import {Input} from '../../components/form';
 import InputPassword from '../../components/form/input-password';
 import BannerText from './../../components/banner-text';
 const Login = function (){
-  
     return <LayoutEmpty>
      <div className='max-w-[1440px] mx-auto'>
        <div className='grid grid-cols-2 bg-white border shadow rounded-md gap-5 overflow-hidden  min-h-[100vh]'>
