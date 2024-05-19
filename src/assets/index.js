@@ -11,6 +11,7 @@ import bookImage from "./book-alt.svg"
 import navRightImage from "./nav-right.svg"
 import userCourseAnnouceImage from "./userCourseAnnouceDetail.svg"
 import navLeftImage from "./navLeft.svg"
+import arrowDown from "./arrowDown.png"
 
 const images = {
     bookImage,
@@ -26,5 +27,6 @@ const images = {
     navRightImage,
     userCourseAnnouceImage,
     navLeftImage,
+    arrowDown
 }
 export default images;

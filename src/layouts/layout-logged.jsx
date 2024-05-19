@@ -4,6 +4,7 @@ import {Topbar} from "../components/topbar"
 import {Sidebar} from "../components/sidebar"
 import { useState  } from 'react';
 import RouterNoti from '../pages/notification/routerNoti';
+import RouterTime from '../pages/timetable/routerTime';
 
 const MENU_ITEM = [
     {
@@ -136,7 +137,7 @@ export default function LayoutLogged ({ label, children}){
             <Sidebar menuData={menuData} updateMenuData={updateMenuData}></Sidebar>
             <div className={"w-full h-full pb-[3rem]"}>
                 <div className={"inline-flex flex-col items-start mt-[10rem] pl-[26em] w-max h-full "}>
-                    <RouterNoti/>
+                    
                     {children}
                 </div>
             </div>
