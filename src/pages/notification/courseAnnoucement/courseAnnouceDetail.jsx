@@ -6,7 +6,7 @@ import CourseDetailItem from './courseDetailItem';
 export default function CourseAnnouceDetail() {
     const navigate = useNavigate();
     const handleOnClickBackCourseAnnouce = () => {
-        navigate("/noti")
+        navigate("/noti/course-announcement")
     }
     return (
     <div className="w-full inline-flex flex-col items-start gap-[2em]">

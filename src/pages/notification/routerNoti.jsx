@@ -9,7 +9,6 @@ const RouterNoti = () => {
         <Routes>
             <Route path="/notice-board/detail" element={<NoticeBoardDetail />} />
             <Route path="/notice-board/*" element={<NoticeBoard />} />  
-
             <Route path="/course-announcement/detail" element={<CourseAnnouceDetail />} />
             <Route path="/*" element={<CourseAnnouncement />} />  
         </Routes>
