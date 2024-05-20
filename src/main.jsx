@@ -12,7 +12,6 @@ import NoticeBoardDetail from "./pages/notification/noticeBoard/noticeBoardDetai
 import Gradebook from "./pages/gradeBook/index.jsx";
 import Overview from "./pages/overview/Overview.jsx";
 
-
 const routers = createBrowserRouter([
   {
     path: "/",
