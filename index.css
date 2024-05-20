@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-input {
+    @apply block w-full py-4 px-4 mt-2 rounded-md  border text-lg font-normal border-[#AFB5BB];
+  }
+  .card {
+    @apply bg-white rounded-lg shadow;
+  }
+  .active {
+    @apply bg-[#CFE2FF];
+  }
+  .not-talk {
+    @apply font-bold text-[#3D8BFD];
+  }
+}
+
+@layer base {
+  .content {
+    @apply text-sm text-[#343A40] font-medium;
+  }
+  .content h4 {
+    line-height: 1.7;
+    @apply font-bold;
+  }
+}
