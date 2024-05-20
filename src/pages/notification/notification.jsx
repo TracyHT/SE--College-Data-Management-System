@@ -1,12 +1,10 @@
-import LayoutLogged from '../../layouts/layout-logged';
+import { Outlet } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
 export default function Notification({children}) {
 
-    return <LayoutLogged label={"Notification"} >
-        {children}
-    </LayoutLogged>
+    return <Outlet />
 }
 
 Notification.propTypes = {

@@ -7,7 +7,6 @@ const router =createBrowserRouter(
       <Route>
           <Route path="/login" element={<Login />}  />
           <Route path="/noti/*" element={<Notification />}  />
-          
       </Route>
     )
   )
