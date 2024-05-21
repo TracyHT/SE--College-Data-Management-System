@@ -44,7 +44,9 @@ export const data = {
     },
   ],
 };
-
+export const options = {
+  responsive: true,
+};
 export default function ChartLineGPACGPA() {
-  return <Chart type='line' data={data} />;
+  return <Chart type='line' data={data} options={options}/>;
 }

@@ -24,7 +24,7 @@ export default function NoticeBoard() {
         </div>
       </div>
 
-      <div className="flex p-[3em] flex-col items-end self-stretch rounded-[1em] bg-[#FFF] gap-[1em] w-[70vw]">
+      <div className="flex p-[3em] flex-col items-end self-stretch rounded-[1em] bg-[#FFF] gap-[1em]">
         <NoticeBoardItem
           title={
             "Mid-term exam regulations announcement (2nd semester 2023-2024)"

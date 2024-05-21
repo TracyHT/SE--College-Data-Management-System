@@ -45,7 +45,7 @@ export function Table({data = []}) {
 export function TableGradebook({title , tags = [], tableData = []}){
     return   <div className="flex flex-col mb-7">
     <h4 className="text-xl font-bold text-[#6C757D] uppercase mb-5"> {title}</h4>
-    <div className="card shadow border p-8">
+    <div className="card shadow border p-8 bg-white">
        <div className="flex justify-between items-center mb-10">
            <div className="font-bold me-auto">  
                <p className="text-[28px] text-[#022081]">{title}</p>

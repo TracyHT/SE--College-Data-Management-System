@@ -23,7 +23,7 @@ export default function NoticeBoardDetail() {
                 </div>
             </div>
         </div>
-        <div className="flex p-8 items-start self-stretch gap-[5em] rounded-[1em] bg-[#FFF] w-[75em]">
+        <div className="flex p-8 items-start self-stretch gap-[5em] rounded-[1em] bg-[#FFF]">
             <p className=" text-base not-italic font-medium leading-6  whitespace-pre-line text-[#343A40]">
                 {`Trường Đại học Quốc tế thông báo đến các Khoa, Bộ môn và sinh viên về một số quy định trong kỳ kiểm tra giữa kỳ học kỳ II năm học 2023-2024 như sau:
 

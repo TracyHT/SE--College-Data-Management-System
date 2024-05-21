@@ -7,3 +7,10 @@ html, body{
 
     /* background-size: 1950px 1000px;  */
 }
+.box-outlet {
+    margin-left: 18rem;
+    margin-top: 120px;
+}
+p {
+    word-wrap: break-word;
+}

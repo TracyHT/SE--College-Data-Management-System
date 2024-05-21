@@ -18,14 +18,14 @@ export default function Sidebar({ className, menuData, ...prop }) {
         return item.children.data.map((child) => (
             <Link
             to={item.path + child.path}
-                className="flex items-center self-stretch py-[1em] pl-[3.75em] pr-[0.5em] w-full justify-between"
+                className="flex items-center self-stretch py-[1em] pl-[3.95em] pr-[0.5em] w-full justify-between"
                 key={child.id}
                 
             >
                 <span className={'text-left text-base not-italic font-semibold leading-6 ' + ( location.pathname.startsWith(item.path + child.path) ? ' text-white' : ' text-[#AFB5BB]')}>
                     {child.titles}
                 </span>
-                <span className="flex w-[1em] h-[1em] p-[0.75em] justify-center items-center rounded-[5em] bg-[#DC3545]">
+                <span className={`flex w-[1em] h-[1em] p-[0.75em] justify-center items-center rounded-[5em] bg-[#DC3545] ${location.pathname.includes(item?.path + child?.path) ? " text-[#F8F9FA]" : "leading-[2em] text-[#080D25]" }`} >
                     {child.numberNoti}
                 </span>
             </Link>
@@ -33,7 +33,7 @@ export default function Sidebar({ className, menuData, ...prop }) {
     };
 
     return (
-        <div className={`fixed z-50 inline-flex flex-col items-start flex-shrink-0 z-1 h-full ${className} `} {...prop}>
+        <div className={`fixed left-0 top-0 z-50 inline-flex flex-col items-start flex-shrink-0 z-1 h-full ${className} `} {...prop}>
             <img className="relative h-full w-[18rem]" src={images.sideBarBgImage} alt="Sidebar background" />
             <div className="mt-[2rem] absolute px-[1.75rem] ">
                 <div className="flex items-center self-stretch py-[1.75rem] gap-[0.75rem]">
