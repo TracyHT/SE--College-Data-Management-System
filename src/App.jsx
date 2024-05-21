@@ -50,7 +50,7 @@ function App() {
       icon: images.calendarImage,
       titles: "Timetable",
       numberNoti: 2,
-      path: "/ttb",
+      path: "/timetable",
     },
     {
       // index: 4,
@@ -68,7 +68,7 @@ function App() {
       <div className={"w-full h-full pb-[3rem]"}>
         <div
           className={
-            "inline-flex flex-col items-start mt-[10rem] pl-[26em] w-max h-full "
+            "flex flex-col items-start h-full box-outlet p-[2.5rem]"
           }
         >
           <Outlet />

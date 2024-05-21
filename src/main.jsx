@@ -11,6 +11,8 @@ import CourseAnnoucement from "./pages/notification/courseAnnoucement/courseAnno
 import NoticeBoardDetail from "./pages/notification/noticeBoard/noticeBoardDetail.jsx";
 import Gradebook from "./pages/gradeBook/index.jsx";
 import Overview from "./pages/overview/Overview.jsx";
+import TotalCredit from "./pages/totalCredit/totalCredit.jsx";
+import Time from "./pages/timetable/Time.jsx";
 
 const routers = createBrowserRouter([
   {
@@ -44,7 +46,7 @@ const routers = createBrowserRouter([
           {
             path: "course-announcement",
             element: <CourseAnnoucement />,
-          },
+          }
         ],
       },
       {
@@ -52,8 +54,16 @@ const routers = createBrowserRouter([
         element: <Gradebook />
       },
       {
+        path:"timetable",
+        element: <Time />
+      },
+      {
         path: "overview",
         element: <Overview />
+      },
+      {
+        path:"/overview/total-credit",
+        element: <TotalCredit />
       }
     ],
   },
@@ -64,7 +74,7 @@ const routers = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <RouterProvider router={routers} />
-  </React.StrictMode>
+  // </React.StrictMode>
 );

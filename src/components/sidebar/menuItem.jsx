@@ -13,7 +13,7 @@ export default function MenuItem({ data }) {
 
       </div>
 
-      <span className={data?.numberNoti > 0 ? "flex  w-[1em] h-[1em] p-[0.75em] justify-center items-center rounded-[5em] bg-[#DC3545]" : ""}>
+      <span className={data?.numberNoti > 0 ? `flex  w-[1em] h-[1em] p-[0.75em] justify-center items-center rounded-[5em] bg-[#DC3545] ${location.pathname.includes(data?.path) ? " text-[#F8F9FA]" : "leading-[2em] text-[#080D25]" }` : ""}>
         {data?.numberNoti > 0 ? data?.numberNoti : ""}
       </span>
 

@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import { ChartLineGPACGPA, ChartTotalCredits } from "../../components/chartJS";
+import { SlArrowRight } from "react-icons/sl";
 export default function Overview() {
   return (
     <>
       <div className="card flex w-full">
         <div className="flex-1 lg:max-w-[370px] ">
-          <div className="card py-10 px-7 lg:scale-105  ms:scale-0 bg-gradient-to-t from-[#052C65] to-[#3D8BFD] ">
+          <div className="card rounded-md py-10 px-7 lg:scale-105  ms:scale-0 bg-gradient-to-t from-[#052C65] to-[#3D8BFD] ">
             <div className="flex items-center justify-start">
               <div className="rounded-2xl  border  border-white overflow-hidden w-[72px] h-[72px]">
                 <img
@@ -28,7 +30,7 @@ export default function Overview() {
             </button>
           </div>
         </div>
-        <div className="px-8 flex-1 hidden lg:block">
+        <div className="px-8 rounded-r-lg bg-white flex-1 hidden lg:block">
           <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-x-[46px] gap-y-2 pt-9 pb-5 max-w-[700px]">
             <div className="columns-2  text-sm ">
               <span className="font-bold">Phone number:</span>
@@ -44,7 +46,7 @@ export default function Overview() {
             </div>
             <div className="columns-2  text-sm">
               <span className="font-bold">Email:</span>
-              <p className="font-normal">ITITIU00000@student.hcmiu.edu.vn</p>
+              <p className="font-normal whitespace-pre-line">ITITIU00000@student.hcmiu.edu.vn</p>
             </div>
           </div>
           <div className="border-t py-5">
@@ -92,8 +94,8 @@ export default function Overview() {
           </div>
         </div>
       </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-12 mt-11 gap-6">
-        <div className="md:col-span-7 ">
+      <div className="flex flex-col lg:flex-row mt-11 w-full gap-6">
+        <div className="flex-initial w-full lg:w-2/3 bg-white rounded-md">
           <div className="card p-1 sm:p-8">
             <div className="flex">
               <h3 className="text-[#052C65] text-lg font-bold"> GPA & CGPA </h3>
@@ -103,17 +105,20 @@ export default function Overview() {
             </div>
           </div>
         </div>
-        <div className="md:col-span-5">
+        <div className="flex-initial w-full lg:w-1/3 bg-white rounded-md">
           <div className="card  p-2 sm:p-8">
-            <div className="flex">
+            <div className="flex justify-between">
               <h3 className="text-[#052C65] text-lg font-bold">
                 Total Credits
               </h3>
+              <Link to="/overview/total-credit" className="flex justify-center items-center px-2">
+                <SlArrowRight />
+              </Link>
             </div>
-            <div className="w-[291px] h-[291px] m-auto">
+            <div className="">
               <ChartTotalCredits />
             </div>
-            <div className="grid grid-cols-2 gap-y-3 gap-x-7 max-w-96 m-auto mt-4">
+            <div className="grid grid-cols-2 gap-y-3 gap-x-7 max-w-96 lg:m-auto mt-4">
               <div className="flex justify-between items-center">
                 <span className="flex justify-center items-center">
                   <span className="bg-[#9747FF] w-4 h-4 inline-block me-2 rounded-full"></span>
