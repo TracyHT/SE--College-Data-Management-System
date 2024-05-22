@@ -13,6 +13,7 @@ import Gradebook from "./pages/gradeBook/index.jsx";
 import Overview from "./pages/overview/Overview.jsx";
 import TotalCredit from "./pages/totalCredit/totalCredit.jsx";
 import Time from "./pages/timetable/Time.jsx";
+import Settings from "./pages/settings/settings.jsx";
 
 const routers = createBrowserRouter([
   {
@@ -62,8 +63,12 @@ const routers = createBrowserRouter([
         element: <Overview />
       },
       {
-        path:"/overview/total-credit",
+        path:"overview/total-credit",
         element: <TotalCredit />
+      },
+      {
+        path: "setting",
+        element: <Settings />
       }
     ],
   },
