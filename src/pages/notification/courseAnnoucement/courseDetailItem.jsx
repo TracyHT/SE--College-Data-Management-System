@@ -3,7 +3,7 @@ import images from '../../../assets';
 
 export default function CourseDetailItem({ title, content, daySend, nameSender }) {
     return (
-        <div className="flex p-8 items-start self-stretch gap-[3em] rounded-[2em] bg-[#FFF] w-[75em]">
+        <div className="flex p-8 items-start self-stretch gap-[3em] rounded-[2em] bg-[#FFF] w-full">
             <div className="flex h-56 flex-col justify-between items-start w-[20em]">
                 <div className="flex flex-col items-start self-stretch gap-[1em]">
                     <div className="self-stretch text-xl not-italic font-semibold leading-7 text-[#3D8BFD]">
