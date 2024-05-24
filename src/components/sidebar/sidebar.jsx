@@ -37,8 +37,8 @@ export default function Sidebar({ className, menuData, ...prop }) {
             <img className="relative h-full w-[18rem]" src={images.sideBarBgImage} alt="Sidebar background" />
             <div className="mt-[2rem] absolute px-[1.75rem] ">
                 <div className="flex items-center self-stretch py-[1.75rem] gap-[0.75rem]">
-                    <img src={images.rectangleImage} className="w-8 h-8" alt="Platform logo" />
-                    <span className="text-xl not-italic font-bold leading-7 text-[#F8F9FA]">PlatformName</span>
+                    <img src={images.logo} className="w-35 h-35" alt="Platform logo" />
+                    {/* <span className="text-xl not-italic font-bold leading-7 text-[#F8F9FA]">SBuddy</span> */}
                 </div>
                 <div className="flex w-56 flex-col items-start">
                     <span className="text-sm not-italic font-medium leading-5 text-[#F8F9FA]">MENU </span>

@@ -25,9 +25,9 @@ export default function Time() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1"
                       d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
                     />
                   </svg>
@@ -41,9 +41,9 @@ export default function Time() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1"
                       d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
                     />
                   </svg>
@@ -64,9 +64,9 @@ export default function Time() {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </div>

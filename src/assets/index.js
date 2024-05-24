@@ -12,8 +12,15 @@ import navRightImage from "./nav-right.svg"
 import userCourseAnnouceImage from "./userCourseAnnouceDetail.svg"
 import navLeftImage from "./navLeft.svg"
 import arrowDown from "./arrowDown.png"
+import logo from "./Logo.svg"
+import faculitySearch from "./faculitySearch.svg"
+import search from "./search-alt.svg"
+import facilityImage from "./facility.png"
 
 const images = {
+    facilityImage,
+    search,
+    faculitySearch,
     bookImage,
     avatar,
     circleImage,
@@ -27,6 +34,7 @@ const images = {
     navRightImage,
     userCourseAnnouceImage,
     navLeftImage,
-    arrowDown
+    arrowDown,
+    logo
 }
 export default images;

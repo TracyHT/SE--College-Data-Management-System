@@ -19,6 +19,6 @@ export default function ContactInfo()
                             
                             <button  className = "text-gray-500 w-[120px] space-y-0 mt-8 ml-4 btn h-9  border border-black  hover:bg-gray-500 hover:text-white">Save</button>
                         </div>
-                    </div>
+        </div>
     )
 }

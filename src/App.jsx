@@ -54,11 +54,20 @@ function App() {
     },
     {
       // index: 4,
+      icon: images.faculitySearch,
+      titles: "Faculity Search",
+      path: "/faculitySearch",
+      numberNoti: 0,
+    },
+    {
+      // index: 5,
       icon: images.settingImage,
       titles: "Settings",
       path: "/setting",
       numberNoti: 2,
     },
+
+
   ];
 
   return (

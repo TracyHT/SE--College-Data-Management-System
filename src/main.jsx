@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -14,6 +14,9 @@ import Overview from "./pages/overview/Overview.jsx";
 import TotalCredit from "./pages/totalCredit/totalCredit.jsx";
 import Time from "./pages/timetable/Time.jsx";
 import Settings from "./pages/settings/settings.jsx";
+import FaculitySearch from "./pages/faculitySearch/faculitySearch.jsx"
+
+import FaculityDetail from "./pages/faculitySearch/faculityDetail.jsx";
 
 const routers = createBrowserRouter([
   {
@@ -69,6 +72,14 @@ const routers = createBrowserRouter([
       {
         path: "setting",
         element: <Settings />
+      },
+      {
+        path: "faculitySearch",
+        element: <FaculitySearch/>,
+      },
+      {
+        path: "faculitySearch/detail",
+        element: <FaculityDetail/>,
       }
     ],
   },

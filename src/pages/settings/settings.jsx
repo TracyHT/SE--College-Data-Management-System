@@ -1,8 +1,3 @@
-import { useState } from "react";
-import images from "../../assets";
-import Switch from "../../components/switch/Switch";
-import ClickSwitch from "../../components/switch/ClickSwitch";
-import Dropdown from "../../components/switch/Dropdown";
 import ContactInfo from "./ContactInfo";
 import Profile from "../settings/profile";
 import Pass from "../settings/Pass";
