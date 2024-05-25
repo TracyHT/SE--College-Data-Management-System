@@ -11,14 +11,14 @@ export default function CourseAnnoucement()  {
 <div className="w-full">
 
 <div className="flex justify-between items-center self-stretch ">
-    <span className="flex text-3xl not-italic font-bold leading-10 text-[#080D25]">Courses Annoucement</span>
+    <span className="flex text-3xl not-italic font-bold leading-10 dark:text-[#cfe2ff] text-[#080D25]">Courses Annoucement</span>
     <div className="flex items-center gap-[2em] ">
         <div>
             <span className="text-sm not-italic font-bold leading-5 text-[#DC3545]">1 unread notifications</span>
         </div>
         <div className="flex items-center gap-[1em] cursor-pointer">
             <img src={images.check2allImage} alt="mark"></img>
-            <span className="text-sm not-italic font-semibold leading-5 text-[#6C757D] ">Mark all as read</span>
+            <span className="text-sm not-italic font-semibold leading-5 dark:text-[#f8f9fa] text-[#6C757D] ">Mark all as read</span>
         </div>
     </div>
 </div>
@@ -43,7 +43,7 @@ export default function CourseAnnoucement()  {
 
 
         </div>
-        <div className="flex flex-col items-start bg-white rounded-[2em] px-[1.75em] py-[2em]  w-[24em] gap-[2em]">
+        <div className="flex flex-col items-start dark:bg-[#6c757d] bg-white rounded-[2em] px-[1.75em] py-[2em]  w-[24em] gap-[2em]">
                 <span className="text-xl not-italic font-bold leading-7 text-[#052C65]">Courses with updates</span>
                 <div className="flex flex-col items-start self-stretch gap-[1em]">  
                   <CourseItem title={"Computer Architecture_S2_2023-24_G01"} numberOfNoti={1} active={true} ></CourseItem>
@@ -55,7 +55,7 @@ export default function CourseAnnoucement()  {
 
             </div>
     </div>
-    <div className="flex p-8 flex-col items-end self-stretch w-[50em] bg-white rounded-[20px] mt-[2em] gap-[2em]">
+    <div className="flex p-8 flex-col items-end self-stretch w-[50em] dark:bg-[#6c757d] bg-white rounded-[20px] mt-[2em] gap-[2em]">
     
         <Letter 
         title={"Cancel CA class on Tuesday, 19 March 2024"} 

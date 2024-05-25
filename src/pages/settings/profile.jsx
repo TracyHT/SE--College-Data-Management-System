@@ -2,7 +2,7 @@ import images from "../../assets"
 
 export default function Profile(){
     return(
-    <div className="mt-2 h-96 flex flex-col  w-[384px] py-[24px] px-[24px] bg-gradient-to-r from-blue-700 to-blue-800  rounded-[20px] gap-[20px]">
+    <div className="mt-2 flex flex-col   py-[24px] px-[24px] bg-gradient-to-r from-blue-700 to-blue-800  rounded-[20px] gap-[20px]">
                             
                             <div className = "mb-6">
                                 <div className = "ml-0">

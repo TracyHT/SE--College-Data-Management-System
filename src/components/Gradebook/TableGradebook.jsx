@@ -27,16 +27,16 @@ export function Table({data = []}) {
     <tbody className="font-medium text-center">
         {data.map(function(data , index) {
             return <tr className="border-collapse border-b " key={data.id ?? index}>
-              <td className="p-3">1</td>
-              <td className="p-3">IT089IU</td>
-              <td className="p-3 text-[#022081]" >Engineering Ethics and Professional Skills</td>
-              <td className="p-3">-</td>
-              <td className="p-3">-</td>
-              <td className="p-3">-</td>
-              <td className="p-3">-</td>
-              <td className="p-3">-</td>
-              <td className="p-3">-</td>
-              <td className="p-3">-</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">1</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">IT089IU</td>
+              <td className="p-3 dark:text-[#9ec5fe] text-[#022081]" >Engineering Ethics and Professional Skills</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">-</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">-</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">-</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">-</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">-</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">-</td>
+              <td className="p-3 text-[#000] dark:text-[#fff]">-</td>
           </tr>
         })}
     </tbody>
@@ -45,11 +45,11 @@ export function Table({data = []}) {
 export function TableGradebook({title , tags = [], tableData = []}){
     return   <div className="flex flex-col mb-7">
     <h4 className="text-xl font-bold text-[#6C757D] uppercase mb-5"> {title}</h4>
-    <div className="card shadow border p-8 bg-white">
+    <div className="card shadow border border-[#fff] dark:border-[#adb5bd] p-8 rounded-lg dark:bg-[#6c757d] bg-white">
        <div className="flex justify-between items-center mb-10">
            <div className="font-bold me-auto">  
-               <p className="text-[28px] text-[#022081]">{title}</p>
-               <p className="text-sm text-[#6C757D]">  ACADEMIC RATING: <span className="font-bold text-[#343A40]"> NOT AVAILABLE </span></p>
+               <p className="text-[28px] dark:text-[#9ec5fe] text-[#022081]">{title}</p>
+               <p className="text-sm text-[#6C757D]">  ACADEMIC RATING: <span className="font-bold dark:text-[#f8f9fa] text-[#343A40]"> NOT AVAILABLE </span></p>
            </div>
            <div className="max-w-[600px] flex flex-wrap gap-2">
                {tags.map(tag => <Tag title={tag.title} value={tag.value} key={tag.id}/>)}

@@ -7,8 +7,8 @@ export default function User ({className,img,name,id}){
             <div className="flex items-center gap-[1.75em]">
                 <img src={img} className="w-12 h-12 rounded-lg" ></img>
                 <div className="flex flex-col justify-center items-start">
-                    <strong className="text-right text-base not-italic font-semibold leading-6 color-primary">{name}</strong>
-                    <span className="text-right text-sm not-italic font-medium leading-3 text-[#495057]">{id}</span>
+                    <strong className="text-right text-base not-italic font-semibold leading-6 dark:text-[#fff] color-primary">{name}</strong>
+                    <span className="text-right text-sm not-italic font-medium leading-3 dark:text-[#e9ecef] text-[#495057]">{id}</span>
                 </div>
                     <img src={dropDownIcon} className="w-5 h-5"></img>
             </div>

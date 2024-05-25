@@ -3,8 +3,7 @@ import images from '../assets';
 import {Topbar} from "../components/topbar"
 import {Sidebar} from "../components/sidebar"
 import { useState  } from 'react';
-import RouterNoti from '../pages/notification/routerNoti';
-import RouterTime from '../pages/timetable/routerTime';
+
 
 const MENU_ITEM = [
     {

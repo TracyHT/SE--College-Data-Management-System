@@ -5,7 +5,7 @@ export default function NoticeBoard() {
   return (
     <div className="w-full gap-[2em] inline-flex flex-col items-start">
       <div className="flex justify-between items-center self-stretch ">
-        <span className="flex text-3xl not-italic font-bold leading-10 text-[#080D25]">
+        <span className="flex text-3xl dark:text-[#cfe2ff] not-italic font-bold leading-10 text-[#080D25]">
           Notice board
         </span>
 
@@ -17,14 +17,14 @@ export default function NoticeBoard() {
           </div>
           <div className="flex items-center gap-[1em] cursor-pointer">
             <img src={images.check2allImage} alt="mark"></img>
-            <span className="text-sm not-italic font-semibold leading-5 text-[#6C757D] ">
+            <span className="text-sm dark:text-[#f8f9fa] not-italic font-semibold leading-5 text-[#6C757D] ">
               Mark all as read
             </span>
           </div>
         </div>
       </div>
 
-      <div className="flex p-[3em] flex-col items-end self-stretch rounded-[1em] bg-[#FFF] gap-[1em]">
+      <div className="flex p-[3em] flex-col items-end self-stretch rounded-[1em] dark:bg-[#6c757d] bg-[#FFF] gap-[1em]">
         <NoticeBoardItem
           title={
             "Mid-term exam regulations announcement (2nd semester 2023-2024)"
