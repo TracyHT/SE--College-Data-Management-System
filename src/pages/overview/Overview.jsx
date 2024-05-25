@@ -30,21 +30,21 @@ export default function Overview() {
             </button>
           </div>
         </div>
-        <div className="px-8 rounded-r-lg bg-white flex-1 hidden lg:block">
+        <div className="px-8 rounded-r-lg dark:bg-[#6c757d] bg-white flex-1 hidden lg:block">
           <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-x-[46px] gap-y-2 pt-9 pb-5 max-w-[700px]">
-            <div className="columns-2  text-sm ">
+            <div className="columns-2 dark:text-[#fff]  text-sm ">
               <span className="font-bold">Phone number:</span>
               <p className="font-normal">(+84) 909 909 009</p>
             </div>
-            <div className="columns-2  text-sm">
+            <div className="columns-2 dark:text-[#fff]  text-sm">
               <span className="font-bold">Birthday::</span>
               <p className="font-normal">28/02/2003</p>
             </div>
-            <div className="columns-2  text-sm">
+            <div className="columns-2 dark:text-[#fff]  text-sm">
               <span className="font-bold">Address:</span>
               <p className="font-normal">Thu Duc, Ho Chi Minh City</p>
             </div>
-            <div className="columns-2  text-sm">
+            <div className="columns-2 dark:text-[#fff]  text-sm">
               <span className="font-bold">Email:</span>
               <p className="font-normal whitespace-pre-line">ITITIU00000@student.hcmiu.edu.vn</p>
             </div>

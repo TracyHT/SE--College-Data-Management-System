@@ -15,11 +15,11 @@ export default function CourseAnnouceDetail() {
             <div className="flex flex-col justify-center items-start p-[1em] gap-[2em]">
                 <div className="flex items-center gap-[1em] cursor-pointer" onClick={handleOnClickBackCourseAnnouce}>
                     <img src={images.navLeftImage} className={"w-8 h-8"}></img>
-                    <div className="text-xl not-italic font-semibold leading-7 text-[#0A150F]">Back</div>
+                    <div className="text-xl not-italic dark:text-[#fff] font-semibold leading-7 text-[#0A150F]">Back</div>
                 </div>
             </div>
             <div className="flex justify-center items-start self-stretch px-[3em] gap-[2em]">
-                <div className="text-3xl not-italic font-bold leading-10 text-[#080D25]">
+                <div className="text-3xl not-italic dark:text-[#cfe2ff] font-bold leading-10 text-[#080D25]">
                 Computer Architecture _S2_2023-24_G01
                 </div>
             </div>

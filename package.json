@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.2.5",
     "bootstrap-icons": "^1.11.3",
     "chart.js": "^4.4.3",
     "classnames": "^2.5.1",

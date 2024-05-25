@@ -28,11 +28,11 @@ export default function Topbar ({className, menuData , ...prop }){
         return result;
     }
     return(
-        <div className={`bg-white fixed top-0 pl-[25em] flex justify-between items-center flex-shrink-0 w-full
+        <div className={`bg-white dark:bg-[#031633] fixed top-0 pl-[25em] flex justify-between items-center flex-shrink-0 w-full
         px-[1.25em] z-40 py-[2.25em] overflow-hidden ${className}`} {...prop} >
             <header className='flex items-center flex-shrink-0 gap-[1.25em]'>
             <img className="w-10 h-10 flex-shrink-0 color-primary" src={images.bellImage}  alt=""></img>
-            <span className="text-right font-bold text-primary text-3xl ">{findLabel()}</span>
+            <span className="text-right font-bold dark:text-[#cfe2ff] text-primary text-3xl ">{findLabel()}</span>
              </header>
             <User img={avatar} name={"Thomas Anree"} id={"ITITIU21000"}></User>
         </div>

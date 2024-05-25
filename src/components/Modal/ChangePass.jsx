@@ -1,3 +1,4 @@
+import React from 'react'
 import InputPassword from '../form/input-password'
 
 const ChangePass = ({isVisible, onClose})=>{

@@ -10,14 +10,14 @@ import SystemSet from "./SystemSet";
 
 export default function Settings() {
   return (
-    <div className="h-[800px] w-[1200px] flex space-x-6 space-y-2 ml-20">
-      <div className="flex flex-col ">
+    <div className="flex space-x-6 space-y-2 w-full">
+      <div className="flex flex-auto w-1/3 flex-col ">
         <Profile />
 
         <Pass />
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-auto w-2/3 flex-col">
         <ContactInfo />
         <SystemSet />
       </div>

@@ -14,17 +14,17 @@ export default function NoticeBoardDetail() {
             <div className="flex flex-col justify-center items-start p-[0.5em] gap-[1em]">
                 <div className="flex items-center gap-[1em] cursor-pointer" onClick={handleOnClickBackNoticeBoard}>
                     <img src={images.navLeftImage} className={"w-8 h-8"}></img>
-                    <div className="text-xl not-italic font-semibold leading-7 text-[#0A150F]">Back</div>
+                    <div className="text-xl not-italic font-semibold leading-7 dark:text-[#fff] text-[#0A150F]">Back</div>
                 </div>
             </div>
             <div className="flex justify-center items-start self-stretch px-[3em] gap-[2em]">
-                <div className="text-3xl not-italic font-bold leading-10 text-[#080D25]">
+                <div className="text-3xl not-italic font-bold leading-10 dark:text-[#cfe2ff] text-[#080D25]">
                 Mid-term exam regulations announcement (2nd semester 2023-2024)
                 </div>
             </div>
         </div>
-        <div className="flex p-8 items-start self-stretch gap-[5em] rounded-[1em] bg-[#FFF]">
-            <p className=" text-base not-italic font-medium leading-6  whitespace-pre-line text-[#343A40]">
+        <div className="flex p-8 items-start self-stretch gap-[5em] rounded-[1em] dark:bg-[#6c757d] bg-[#FFF]">
+            <p className=" text-base not-italic font-medium leading-6  whitespace-pre-line dark:text-[#fff] text-[#343A40]">
                 {`Trường Đại học Quốc tế thông báo đến các Khoa, Bộ môn và sinh viên về một số quy định trong kỳ kiểm tra giữa kỳ học kỳ II năm học 2023-2024 như sau:
 
 1.  Thời gian tổ chức thi
