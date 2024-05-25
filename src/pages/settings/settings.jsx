@@ -6,7 +6,7 @@ import SystemSet from "./SystemSet";
 export default function Settings() {
   return (
     <div className="h-[800px] w-[1200px] flex space-x-6 space-y-2 ml-20">
-      <div className="flex flex-col ">
+      <div className="flex flex-col mx-[55px] ">
         <Profile />
 
         <Pass />
