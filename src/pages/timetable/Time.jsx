@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export default function Time() {
   return (
     <>
-      <div className="flex flex-col -my-5">
+      <div className="flex flex-col -my-5 mx-[80px]">
         <div className="w-[1100px] h-[100px] -ml-4 flex-col gap-5 inline-flex">
           <div className="text-blue-900 text-[28px]  font-bold font-['Montserrat']">
             Semester 2 - 2023

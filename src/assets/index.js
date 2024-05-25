@@ -16,6 +16,8 @@ import logo from "./Logo.svg"
 import faculitySearch from "./faculitySearch.svg"
 import search from "./search-alt.svg"
 import facilityImage from "./facility.png"
+import moon from "./moon.png"
+import sun from "./sun.png"
 
 const images = {
     facilityImage,
@@ -35,6 +37,8 @@ const images = {
     userCourseAnnouceImage,
     navLeftImage,
     arrowDown,
-    logo
+    logo,
+    moon,
+    sun
 }
 export default images;

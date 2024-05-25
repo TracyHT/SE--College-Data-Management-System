@@ -14,9 +14,10 @@ export default function Profile(){
                                         <span className="text-white text-xl font-bold">Thomas Anree</span>
                                         <br></br>
                                         <span className="text-white">ITITIU00000</span>
-                                        
-                                        <button id= "myBtn" className = "text-white mt-1 btn max-w-fit bg-sky-500/100 hover:bg-sky-400/100">Change Avatar</button>
-                                        
+                                        <br></br>
+                                        <div className="w-[131px] h-8 px-3 py-[5px] bg-blue-500 hover:bg-sky-400/100 rounded-md justify-start items-start gap-2 inline-flex">
+                                            <button className = "text-white text-sm font-semibold font-['Montserrat'] leading-none mt-1 btn max-w-fit">Change Avatar</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className ="mt-4">

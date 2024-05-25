@@ -55,7 +55,7 @@ export default function CourseAnnoucement()  {
 
             </div>
     </div>
-    <div className="flex p-8 flex-col items-end self-stretch w-[50em] bg-white rounded-[20px] mt-[2em] gap-[2em]">
+    <div className="flex p-8 flex-col items-end self-stretch w-[70em] bg-white rounded-[20px] mt-[2em] gap-[2em]">
     
         <Letter 
         title={"Cancel CA class on Tuesday, 19 March 2024"} 

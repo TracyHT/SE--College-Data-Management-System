@@ -9,7 +9,9 @@ export default function Pass(){
                         <div className = "text-center mt-5">
                             <h1 className = "text-black text-2xl font-bold text-center mt-0.5">Password</h1> 
                         </div>
-                        <button onClick ={()=> setShowModal(true)} className = "text-white space-y-0 mt-5 ml-4 btn h-9 bg-sky-500 hover:bg-sky-400/100">Change Password</button>
+                        <div className = "">
+                        <button onClick ={()=> setShowModal(true)} className = "text-white text-sm font-bold font-['Montserrat'] leading-tight space-y-0 mt-5 ml-4 btn h-9w-[183px] h-10 px-4 py-2.5 bg-blue-500 rounded-md justify-center items-center gap-2 inline-flex hover:bg-sky-400/100">Change Password</button>
+                        </div>
                         <ChangePass onClose={()=> setShowModal(false)} isVisible = {showModal}></ChangePass>
                     </div>
                     )

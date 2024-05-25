@@ -4,9 +4,9 @@ import { SlArrowRight } from "react-icons/sl";
 export default function Overview() {
   return (
     <>
-      <div className="card flex w-full">
+      <div className="card flex w-full mx-2">
         <div className="flex-1 lg:max-w-[370px] ">
-          <div className="card rounded-md py-10 px-7 lg:scale-105  ms:scale-0 bg-gradient-to-t from-[#052C65] to-[#3D8BFD] ">
+          <div className="card rounded-md py-10 px-6 lg:scale-105  ms:scale-0 bg-gradient-to-t from-[#052C65] to-[#3D8BFD] ">
             <div className="flex items-center justify-start">
               <div className="rounded-2xl  border  border-white overflow-hidden w-[72px] h-[72px]">
                 <img
@@ -30,7 +30,7 @@ export default function Overview() {
             </button>
           </div>
         </div>
-        <div className="px-8 rounded-r-lg bg-white flex-1 hidden lg:block">
+        <div className="px-8 rounded-r-lg bg-white flex-1 hidden lg:block mx-2">
           <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-x-[46px] gap-y-2 pt-9 pb-5 max-w-[700px]">
             <div className="columns-2  text-sm ">
               <span className="font-bold">Phone number:</span>

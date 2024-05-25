@@ -1,6 +1,7 @@
 import Switch from "../../components/switch/Switch";
 import ClickSwitch from "../../components/switch/ClickSwitch";
 import Dropdown from "../../components/switch/Dropdown";
+import images from "../../assets";
 
 export default function SystemSet(){
     return (
