@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors : {
@@ -14,6 +15,12 @@ export default {
         'sans': ['Montserrat', 'sans-serif'],
       }
     },
+    backgroundSize:{
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      "100% 100%": '100% 100%'
+    }
   },
   plugins: [],
 }
